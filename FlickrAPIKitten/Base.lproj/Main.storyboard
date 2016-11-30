@@ -68,6 +68,9 @@
                     <navigationItem key="navigationItem" title="Flickr API - Kitten" id="Voi-Ig-kYu">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="jDE-Ig-P3a"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="kittenCollectionView" destination="inj-5V-fyE" id="ZhM-NS-ng4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
