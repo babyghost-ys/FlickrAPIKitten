@@ -16,6 +16,7 @@
 		AA463E081DEF6C480020FD02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA463E061DEF6C480020FD02 /* LaunchScreen.storyboard */; };
 		AA463E101DEF6D5B0020FD02 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA463E0F1DEF6D5B0020FD02 /* CustomCell.swift */; };
 		AA463E121DEF6DE60020FD02 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA463E111DEF6DE60020FD02 /* Posts.swift */; };
+		AAAB769A1DEF6F9400AC0344 /* jsonEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAB76991DEF6F9400AC0344 /* jsonEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AA463E091DEF6C480020FD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA463E0F1DEF6D5B0020FD02 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		AA463E111DEF6DE60020FD02 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		AAAB76991DEF6F9400AC0344 /* jsonEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonEngine.swift; sourceTree = "<group>"; };
 		D19A9F45A51A26349C33C7ED /* Pods-FlickrAPIKitten.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrAPIKitten.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrAPIKitten/Pods-FlickrAPIKitten.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				AA463E011DEF6C480020FD02 /* FlickrAPIKitten.xcdatamodeld */,
 				AA463E0F1DEF6D5B0020FD02 /* CustomCell.swift */,
 				AA463E111DEF6DE60020FD02 /* Posts.swift */,
+				AAAB76991DEF6F9400AC0344 /* jsonEngine.swift */,
 			);
 			path = FlickrAPIKitten;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				AA463E031DEF6C480020FD02 /* FlickrAPIKitten.xcdatamodeld in Sources */,
 				AA463DFD1DEF6C480020FD02 /* ViewController.swift in Sources */,
 				AA463E121DEF6DE60020FD02 /* Posts.swift in Sources */,
+				AAAB769A1DEF6F9400AC0344 /* jsonEngine.swift in Sources */,
 				AA463E101DEF6D5B0020FD02 /* CustomCell.swift in Sources */,
 				AA463DFB1DEF6C480020FD02 /* AppDelegate.swift in Sources */,
 			);
