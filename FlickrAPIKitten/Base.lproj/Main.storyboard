@@ -65,13 +65,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="inj-5V-fyE" secondAttribute="bottom" id="uss-ZA-L8a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Flickr API - Kitten" id="Voi-Ig-kYu">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="jDE-Ig-P3a">
-                            <connections>
-                                <action selector="refreshButtonClicked:" destination="BYZ-38-t0r" id="s6K-TE-9MU"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Flickr API - Kitten" id="Voi-Ig-kYu"/>
                     <connections>
                         <outlet property="kittenCollectionView" destination="inj-5V-fyE" id="ZhM-NS-ng4"/>
                     </connections>

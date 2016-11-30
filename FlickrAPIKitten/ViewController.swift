@@ -55,9 +55,5 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
             return UICollectionViewCell()
         }
     }
-
-    @IBAction func refreshButtonClicked(_ sender: Any) {
-        LoadPosts()
-    }
 }
 
