@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50DA7B1162813D324EA3AB3D /* Pods_FlickrAPIKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80373089011F4FBF6630CFDD /* Pods_FlickrAPIKitten.framework */; };
 		AA463DFB1DEF6C480020FD02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA463DFA1DEF6C480020FD02 /* AppDelegate.swift */; };
 		AA463DFD1DEF6C480020FD02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA463DFC1DEF6C480020FD02 /* ViewController.swift */; };
 		AA463E001DEF6C480020FD02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA463DFE1DEF6C480020FD02 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6EB261D1C7C6798D6FD9E938 /* Pods-FlickrAPIKitten.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrAPIKitten.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrAPIKitten/Pods-FlickrAPIKitten.release.xcconfig"; sourceTree = "<group>"; };
+		80373089011F4FBF6630CFDD /* Pods_FlickrAPIKitten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrAPIKitten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA463DF71DEF6C480020FD02 /* FlickrAPIKitten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrAPIKitten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA463DFA1DEF6C480020FD02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA463DFC1DEF6C480020FD02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		AA463E091DEF6C480020FD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA463E0F1DEF6D5B0020FD02 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		AA463E111DEF6DE60020FD02 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		D19A9F45A51A26349C33C7ED /* Pods-FlickrAPIKitten.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrAPIKitten.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickrAPIKitten/Pods-FlickrAPIKitten.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DA7B1162813D324EA3AB3D /* Pods_FlickrAPIKitten.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12258FAE56EE529B84B0B01E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80373089011F4FBF6630CFDD /* Pods_FlickrAPIKitten.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D5E36658E2515D1B10FABE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D19A9F45A51A26349C33C7ED /* Pods-FlickrAPIKitten.debug.xcconfig */,
+				6EB261D1C7C6798D6FD9E938 /* Pods-FlickrAPIKitten.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AA463DEE1DEF6C480020FD02 = {
 			isa = PBXGroup;
 			children = (
 				AA463DF91DEF6C480020FD02 /* FlickrAPIKitten */,
 				AA463DF81DEF6C480020FD02 /* Products */,
+				5D5E36658E2515D1B10FABE1 /* Pods */,
+				12258FAE56EE529B84B0B01E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA463E0C1DEF6C480020FD02 /* Build configuration list for PBXNativeTarget "FlickrAPIKitten" */;
 			buildPhases = (
+				EF268DF51B8C11506611B6F6 /* [CP] Check Pods Manifest.lock */,
 				AA463DF31DEF6C480020FD02 /* Sources */,
 				AA463DF41DEF6C480020FD02 /* Frameworks */,
 				AA463DF51DEF6C480020FD02 /* Resources */,
+				DAABD21E3AF0964FE084BABF /* [CP] Embed Pods Frameworks */,
+				7EEDE0AD61685C19FD398E01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EEDE0AD61685C19FD398E01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlickrAPIKitten/Pods-FlickrAPIKitten-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAABD21E3AF0964FE084BABF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlickrAPIKitten/Pods-FlickrAPIKitten-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF268DF51B8C11506611B6F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA463DF31DEF6C480020FD02 /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		AA463E0D1DEF6C480020FD02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19A9F45A51A26349C33C7ED /* Pods-FlickrAPIKitten.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2S6B5447W9;
@@ -282,6 +358,7 @@
 		};
 		AA463E0E1DEF6C480020FD02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB261D1C7C6798D6FD9E938 /* Pods-FlickrAPIKitten.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2S6B5447W9;
@@ -312,6 +389,7 @@
 				AA463E0E1DEF6C480020FD02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

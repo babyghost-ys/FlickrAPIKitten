@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CustomCell: UICollectionViewCell {
     
     @IBOutlet weak var kittenImageView: UIImageView!
     
-    func configureCell(inputThumbURL: String){
-        
+    func configureCell(inputPosts: Posts){
+        if let thumbImg = inputPosts.thumbImageLink {
+            kittenImageView.kf.setImage(with: URL(string: thumbImg))
+        }
     }
 }

@@ -1,0 +1,6 @@
+framework module Pods_FlickrAPIKitten {
+  umbrella header "Pods-FlickrAPIKitten-umbrella.h"
+
+  export *
+  module * { export * }
+}
