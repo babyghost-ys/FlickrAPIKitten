@@ -32,7 +32,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lXr-jW-7UB">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCell" id="lXr-jW-7UB" customClass="CustomCell" customModule="FlickrAPIKitten" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="123" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -50,6 +50,9 @@
                                             <constraint firstItem="07H-gv-yb5" firstAttribute="leading" secondItem="lXr-jW-7UB" secondAttribute="leadingMargin" id="WK7-ff-np6"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="07H-gv-yb5" secondAttribute="trailing" id="vPK-u1-ptx"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="kittenImageView" destination="07H-gv-yb5" id="ASh-oZ-3pC"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
