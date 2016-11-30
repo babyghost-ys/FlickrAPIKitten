@@ -39,7 +39,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="123" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="07H-gv-yb5">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="07H-gv-yb5">
                                                     <rect key="frame" x="8" y="8" width="107" height="109"/>
                                                 </imageView>
                                             </subviews>
@@ -66,7 +66,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Flickr API - Kitten" id="Voi-Ig-kYu">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="jDE-Ig-P3a"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="jDE-Ig-P3a">
+                            <connections>
+                                <action selector="refreshButtonClicked:" destination="BYZ-38-t0r" id="s6K-TE-9MU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="kittenCollectionView" destination="inj-5V-fyE" id="ZhM-NS-ng4"/>

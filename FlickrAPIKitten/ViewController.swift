@@ -20,6 +20,10 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         kittenCollectionView.delegate = self
         kittenCollectionView.dataSource = self
         
+        LoadPosts()
+    }
+    
+    func LoadPosts(){
         self.getJSONposts.getPosts(getposts: "https://api.flickr.com/services/feeds/photos_public.gne?tags=kitten&format=json&nojsoncallback=?&page=1")
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData(_:)), name: .reloadTableView, object: nil)
     }
@@ -52,5 +56,8 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         }
     }
 
+    @IBAction func refreshButtonClicked(_ sender: Any) {
+        LoadPosts()
+    }
 }
 
